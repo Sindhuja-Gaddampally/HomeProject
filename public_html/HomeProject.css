@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Mar, 2018, 8:44:33 AM
+    Author     : sindhu
+*/
+
+.center-util{
+	padding: 20px;
+	text-align: center !important;
+}
+.img-name{
+	position: absolute;
+    top: 50%;
+    left: 45%;
+    cursor: default;
+	color: #fff;
+	font-size: 2em;
+}
+.hp-text{
+	padding: 10px;
+	font-size: 18px;
+	font-family: sans-serif;
+	cursor: default;
+}
+.hp-img{
+	height: auto;
+	width: 70%;
+	cursor: default;
+}
+.hp-form{
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+.hp-mobi{
+	display: none;
+}
+.btn-submit:hover{
+	background-color: #337ab7;
+	color: #fff;
+}
+.error-message{
+	display: none;
+	color: red;
+	font-size: 16px;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .center-util, .hp-text, .hp-mobi {
+    width: 100%;
+	font-size: 15px;
+	display: block !important;
+  }
+  .hp-desktop{
+	  display: none !important;
+  }
+  .hp-form{
+	  width: 100%;
+  }
+}
+
