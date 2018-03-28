@@ -6,14 +6,14 @@
 
 $(document).ready(function(){
     $("#homeProject").submit(function(e){
-		if($("#name").val() != "" && $("#email").val() != ""){
-			$(".error-message").css("display", "none");
-			alert("Submitted");
-		}
+        if($("#name").val() != "" && $("#email").val() != ""){
+                $(".error-message").css("display", "none");
+                alert("Submitted");
+        }
         else{
-			$(".error-message").css("display", "inline-block");
-			e.preventDefault();
-		}
+            $(".error-message").css("display", "inline-block");
+            e.preventDefault();
+        }
 			
     });
 });

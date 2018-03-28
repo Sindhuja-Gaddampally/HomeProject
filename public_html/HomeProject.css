@@ -8,57 +8,57 @@ and open the template in the editor.
     Author     : sindhu
 */
 
-.center-util{
-	padding: 20px;
-	text-align: center !important;
+.hp-content-center{
+    padding: 20px;
+    text-align: center !important;
 }
 .img-name{
-	position: absolute;
-    top: 50%;
-    left: 45%;
+    position: absolute;
+    bottom: 6px;
+    left: 25px;
     cursor: default;
-	color: #fff;
-	font-size: 2em;
+    color: #fff;
+    font-size: 2em;
 }
 .hp-text{
-	padding: 10px;
-	font-size: 18px;
-	font-family: sans-serif;
-	cursor: default;
+    padding: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: default;
 }
 .hp-img{
-	height: auto;
-	width: 70%;
-	cursor: default;
+    height: auto;
+    width: 70%;
+    cursor: default;
 }
 .hp-form{
-	border: 1px solid #ccc;
-	padding: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
 }
 .hp-mobi{
-	display: none;
+    display: none;
 }
 .btn-submit:hover{
-	background-color: #337ab7;
-	color: #fff;
+    background-color: #337ab7;
+    color: #fff;
 }
 .error-message{
-	display: none;
-	color: red;
-	font-size: 16px;
+    display: none;
+    color: red;
+    font-size: 16px;
 }
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .center-util, .hp-text, .hp-mobi {
-    width: 100%;
-	font-size: 15px;
-	display: block !important;
+  .hp-content-center, .hp-text, .hp-mobi {
+        width: 100%;
+        font-size: 15px;
+        display: block !important;
   }
   .hp-desktop{
-	  display: none !important;
+        display: none !important;
   }
   .hp-form{
-	  width: 100%;
+	width: 100%;
   }
 }
 
