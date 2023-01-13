@@ -1,0 +1,14 @@
+
+.jobSearchTitle{
+    color: cornflowerblue;
+    font-size: 15px;
+    padding-left: 100px;
+    
+}
+.jobSearchForm{
+    padding: 100px;
+    
+}
+.jobSearchForm div{
+    padding: 3px;
+}

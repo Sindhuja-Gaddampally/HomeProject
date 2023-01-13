@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="jobSearchApp">
+    <head>
+        <title>Job Search</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+        
+        
+        <!-- load angular via CDN -->
+        <script src="//code.angularjs.org/1.8.2/angular.min.js"></script>
+        <script src="jobSearch.js"></script>
+        <link rel="stylesheet" href="jobSearch.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <div ng-controller="jobSearchController">
+            
+                
+                <div class="jobSearchTitle">
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <h1>{{ vacancyTitle }}</h1>
+                        </div>
+                    </div>
+                </div>
+                    <div class="jobSearchForm">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <label>Vacancy Title</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-3">
+                            <input type="text" ng-model="vacancyTitle" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <label>Send CVs to</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-6">
+                        <select ng-change="showfields()" ng-model="selectedCV">
+                            <option style="display:none" value=""></option>
+                            <option ng-repeat="sendCV in sendCVS" value="{{sendCV.id}}">{{ sendCV.send_cv }}</option>
+                          </select>
+                        </div>
+                    </div>
+                            <div ng-show="selectedCV">
+                            <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <label>Role</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-3">
+                            <input type="text" ng-model="roleName" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <label>Profile</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                        <textarea cols="60" rows="5" ng-model="profile">  
+                        </textarea>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                      <input type="checkbox" ng-model="tender">
+                      <label class="form-check-label" for="check1">Tender</label>
+                        </div>
+                    </div>
+                                <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <input type="button" class="btn btn-primary" value="Advertise" /></div></div>
+                        </div>
+                        </div>
+                
+            </div>
+		</div>
+    </body>
+</html>
